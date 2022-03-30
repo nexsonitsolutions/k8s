@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Pod
+metadata: 
+ name: httpdpod
+ labels: 
+  app: myhttpdlabel
+spec:
+ containers:
+  - name: myhttpdcontainer
+    image: httpd
+    ports: 
+     - containerPort: 80
+...
